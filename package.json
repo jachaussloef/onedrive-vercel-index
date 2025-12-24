@@ -4,7 +4,7 @@
   "private": true,
   "engines": {
     "pnpm": "9.0.6"
-  }
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
