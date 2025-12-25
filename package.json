@@ -34,6 +34,7 @@
     "next": "^14.2.21",
     "next-i18next": "^15.0.0",
     "nextjs-progressbar": "^0.0.16",
+    "plyr": "^3.8.3",
     "plyr-react": "^5.1.2",
     "preview-office-docs": "^1.0.2",
     "react": "^18.2.0",
@@ -57,10 +58,10 @@
     "use-clipboard-copy": "^0.2.0",
     "use-constant": "^1.1.1"
   },
-"devDependencies": {
+  "devDependencies": {
     "@types/cors": "^2.8.13",
     "@types/crypto-js": "^4.0.2",
-    "@types/node": "^20.12.0",  
+    "@types/node": "^20.12.0",
     "@types/react": "^18.2.0",
     "@types/react-copy-to-clipboard": "^5.0.4",
     "@types/react-dom": "^18.2.0",
