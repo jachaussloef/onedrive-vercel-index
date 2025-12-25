@@ -20,7 +20,7 @@ import FourOhFour from '../FourOhFour'
 import Loading from '../Loading'
 import CustomEmbedLinkMenu from '../CustomEmbedLinkMenu'
 import type { Options as PlyrOptions } from 'plyr'
-import 'plyr-react/plyr.css'
+import dynamic from 'next/dynamic'
 
 const VideoPlayer: FC<{
   videoName: string
@@ -93,6 +93,11 @@ const VideoPreview: FC<{ file: OdFileObject }> = ({ file }) => {
   const videoUrl = `/api/raw/?path=${asPath}${hashedToken ? `&odpt=${hashedToken}` : ''}`
 
   const isFlv = getExtension(file.name) === 'flv'
+  
+  const Plyr = dynamic(() => import('plyr-react'), {
+  ssr: false,
+  })
+  
   const {
     loading,
     error,
