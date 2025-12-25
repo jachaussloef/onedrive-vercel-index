@@ -1,7 +1,7 @@
 'use client'
 
 import type { OdFileObject } from '../../types'
-
+import 'plyr/dist/plyr.css'
 import { FC, useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
